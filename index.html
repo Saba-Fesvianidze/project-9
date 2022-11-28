@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b05f4c9c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+        *{box-sizing: border-box;padding:0;margin:0;}
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Rubik+Microbe&display=swap');
+        body{font-family:Verdana, Geneva, Tahoma, sans-serif;background-color:#ffdddd;}
+        .nav{
+            list-style:none;
+            padding:10px;
+            margin:0;
+            overflow:hidden;
+            background-color:white;
+            position:fixed;
+            opacity:0.6;
+            bottom:0;
+            left:0;
+            right:0;
+            z-index:1;
+        }
+        .nav:hover{
+            opacity:1;
+        }
+        .nav li{
+            float:left;
+            width:25%;
+            text-align: center;
+            padding:13px;
+        }
+        .nav li:hover:not(#active){
+            background-color:#ccc;
+        }
+        .nav #active:hover{
+            background-color:black;
+            color:white;
+            cursor:pointer;
+        }
+        .nav li a{
+            text-decoration:none;
+            color:black;
+        }
+        .phim{
+            position:relative;
+        }
+        .phim .text{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            text-align: center;
+            color:white;
+            line-height:40px;
+        }
+        .Profile{
+            max-width:1000px;
+            margin:auto;
+            padding:40px;
+            text-align: center;
+        }
+         #but1{
+            background-color:black;
+            padding:9px;
+            color:white;
+            width:150px;
+            border-radius:6px;
+            border:none;
+        }
+        #but1:hover{
+            background-color:grey;
+            color:black;
+        }
+        .phim2{
+            position:relative;
+        }
+        .phim2 .text2{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            text-align:center;
+            line-height:40px;
+            color:white;
+        }
+        .wedding{
+            max-width:1000px;
+            margin:auto;
+            padding:40px;
+            text-align: center;
+        }
+        .wrap{
+            display:flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content: space-around;
+            gap:10px;
+            margin-top:30px;
+        }
+        .left{
+            flex:50%;
+            line-height: 40px;
+        }
+        .right{
+            flex:50%;
+            line-height:40px;
+        }
+        .respond{
+            display:flex;
+            background-color:pink;
+            flex-direction:column;
+            padding:60px;
+            justify-content:center;
+            line-height:40px;
+            text-align: center;
+        }
+        #but2{
+            width:150px;
+            border:none;
+            background-color:crimson;
+            padding:9px;
+            border-radius:6px;
+            color:white;
+            margin: auto;
+            margin-top:13px;
+        }
+        #but2:hover{
+            background-color:grey;
+            color:black;
+        }
+        .footer{
+            background-color:black;
+            color:white;
+            padding:80px;
+            text-align: center;
+        }
+        .footer p a{
+            text-decoration:none;
+            color: white;
+        }
+        .footer a:hover{
+            color:crimson;
+        }
+        @media only screen and (max-width:600px){
+            .wrap{
+                flex-direction: column;
+            }
+            .nav{
+                display:none;
+            }
+        }
+    </style>
+
+    <div class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jane & John</a></li>
+        <li><a href="#">Wedding</a></li>
+        <li id="active">RSVP</li>
+    </div>
+
+    <div class="phim">
+        <img style="width:100%;height:auto;" src="https://img.huffingtonpost.com/asset/5c8a551e3b000037066bda6b.jpeg?ops=scalefit_720_noupscale&format=webp" alt="Wedding">
+        <div class="text">
+            <h1>Jane & John</h1>
+            <h3>Are getting married</h3>
+            <p>17.07.2017</p>
+        </div>
+    </div>
+
+    <div class="Profile">
+        <h3>Jane & John</h3><br><br>
+        <img style="width:100%;height:auto;border-radius: 9px;" src="https://www.w3schools.com/w3images/wedding_couple2.jpg" alt="Couple">
+        <p style="font-family: 'Nerko One', cursive;
+        font-family: 'Rubik Microbe', cursive;">You all know us. And we all know you. We are getting married
+             lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+         officia deserunt mollit anim id est laborum consectetur 
+         adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+         exercitation ullamco laboris nisi ut aliquip ex ea commodo
+         consequat.</p><br><br>
+         <button id="but1">Wedding Details</button><br><br>
+    </div>
+
+    <div class="phim2">
+        <img style="width:100%;height:auto;" src="https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2010/01/jez-timms-7bVMdNYzH_8-unsplash-1280x640.jpg" alt="Flowers">
+        <div class="text2">
+            <h1>You Are Invited</h1>
+            <p>Of course..</p>
+        </div>
+    </div>
+
+    <div class="wedding">
+        <h3>THE WEDDING</h3><br><br>
+        <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/wedding_location.jpg" alt="Ceremony">
+        <div class="wrap">
+            <div class="left">
+                <h4>When</h4>
+                <p>Wedding Ceremony - 2:00pm</p>
+                <p>Reception & Dinner - 5:00pm</p>
+            </div>
+            <div class="right">
+                <h4>Where</h4>
+                <p>Some place, an address</p>
+                <p>Some where, some address</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="respond">
+        <h2>HOPE YOU CAN MAKE IT!</h2>
+        <p>Kindly Respond By January, 2017</p>
+        <button id="but2">RSVP</button>
+    </div>
+
+    <div class="footer">
+        <p>Created by <a href="#">Saba Fesvianidze</a></p>
+    </div>
+
+</body>
+</html>
